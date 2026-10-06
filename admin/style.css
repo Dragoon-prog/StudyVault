@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+main,
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Page title */
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+h2 {
+    font-size: 21px;
+    margin: 0 0 20px;
+    color: #111827;
+}
+
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.table th {
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.table td {
+    padding: 15px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #4b5563;
+}
+
+.table tbody tr:hover,
+.table tr:hover {
+    background: #f9fafb;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+
+.button {
+    display: inline-block;
+    border: none;
+    border-radius: 7px;
+    padding: 9px 15px;
+    margin-right: 5px;
+    background: #2563eb;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.button.danger {
+    background: #dc2626;
+}
+
+.button.danger:hover {
+    background: #b91c1c;
+}
+
+
+.table td[colspan] {
+    text-align: center;
+    padding: 30px;
+    color: #9ca3af;
+}
+
+
+.table td:last-child {
+    white-space: nowrap;
+}
+
+/* Make forms stay beside each other */
+.table td form {
+    display: inline-block !important;
+}
+
+
+@media (max-width: 768px) {
+
+    main,
+    .container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .table th,
+    .table td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .button {
+        padding: 8px 12px;
+        margin-bottom: 4px;
+    }
+}
